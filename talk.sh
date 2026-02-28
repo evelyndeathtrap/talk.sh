@@ -14,7 +14,7 @@ generate_audio() {
 }
 
 # --- Initial Generation ---
-echo "This makes your computer verbalize the information."
+echo "This makes your computer verbalize the information that it's processing."
 echo "Generating initial buffers..."
 generate_audio $FILE1
 generate_audio $FILE2
