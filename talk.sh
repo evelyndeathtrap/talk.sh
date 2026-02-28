@@ -9,7 +9,7 @@ FILE2="test2.mp3"
 # Function to generate audio
 generate_audio() {
     local output_file=$1
-    head -c $BYTES /dev/random | base64 | tr -d '\n' | \
+    head -c $byte_count /dev/urandom | tr -dc 'a-zA-Z0-9 ' | \
     python3 -c "import sys; from gtts import gTTS; text=sys.stdin.read(); tts = gTTS(text[:$BYTES], lang='en'); tts.save('$output_file')"
 }
 
