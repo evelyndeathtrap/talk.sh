@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Configuration
-BYTES=1024
-SPEED=20.0
+BYTES=2048
+SPEED=50.0
 FILE1="test1.mp3"
 FILE2="test2.mp3"
 
