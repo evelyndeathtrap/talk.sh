@@ -2,7 +2,7 @@
 
 # Configuration
 BYTES=2048
-SPEED=50.0
+SPEED=20.0
 FILE1="test1.mp3"
 FILE2="test2.mp3"
 
@@ -14,6 +14,7 @@ generate_audio() {
 }
 
 # --- Initial Generation ---
+echo "This makes your computer verbalize the information."
 echo "Generating initial buffers..."
 generate_audio $FILE1
 generate_audio $FILE2
